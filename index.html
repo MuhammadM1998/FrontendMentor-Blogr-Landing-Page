@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Frontend Mentor | Blogr Landing Page</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Scripts -->
+    <script defer src="./javascript/script.js"></script>
+</head>
+
+<body class="font-overpass">
+    <main>
+        <!-- Intro -->
+        <section class="min-h-screen bg-patternMobile bg-center bg-no-repeat flex flex-col py-12 rounded-bl-[7rem] md:bg-patternDesktop">
+            <header class="relative container mx-auto px-2 pb-6 flex gap-16 justify-between items-center">
+                <div>
+                    <img src="./images/logo.svg" alt="">
+                </div>
+
+                <!-- Mobile Nav -->
+                <nav class="md:hidden  font-ubuntu">
+                    <div class="hamburger-menu hamburger-menu--hidden flex items-center ">
+                        <button class="hamburger-menu__open">
+                                <img src="./images/icon-hamburger.svg" alt="">
+                            </button>
+
+
+                        <button class="hamburger-menu__close hamburger-list--hidden">
+                                <img src="./images/icon-close.svg" alt="">
+                            </button>
+                    </div>
+
+                    <div class="hamburger-list hamburger-list--hidden absolute top-12 right-0 bg-white drop-shadow-lg w-full rounded-md p-8 flex flex-col gap-4 ">
+                        <ul class="flex flex-col gap-2">
+                            <li class="relative nav__btn">
+                                <button class="group font-medium w-full flex gap-4 justify-center items-center">
+                                        <p
+                                            class="nav__title text-primary-blue group-hover:underline group-hover:decoration-2">
+                                            Product</p>
+                                        <img class="nav__img rotate-0 transition" src="./images/icon-arrow-dark.svg"
+                                            alt="">
+                                    </button>
+
+                                <div class="hidden nav__list  bg-gray-200 text-neutral-blue-200 mt-4 py-6 px-6 rounded-md">
+                                    <ul class="flex flex-col items-center gap-2">
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Overview</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Pricing</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Marketplace</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Integrations</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="relative nav__btn">
+                                <button class="group font-medium w-full flex gap-4 justify-center items-center">
+                                        <p
+                                            class="nav__title text-primary-blue group-hover:underline group-hover:decoration-2">
+                                            Company</p>
+                                        <img class="nav__img rotate-0 transition" src="./images/icon-arrow-dark.svg"
+                                            alt="">
+                                    </button>
+
+                                <div class="hidden nav__list  bg-gray-200 text-neutral-blue-200 mt-4 py-6 px-6 rounded-md">
+                                    <ul class="flex flex-col items-center gap-2">
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">About</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Team</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Blog</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Careers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="relative nav__btn">
+                                <button class="group font-medium w-full flex gap-4 justify-center items-center">
+                                        <p
+                                            class="nav__title text-primary-blue group-hover:underline group-hover:decoration-2">
+                                            Connect</p>
+                                        <img class="nav__img rotate-0 transition" src="./images/icon-arrow-dark.svg"
+                                            alt="">
+                                    </button>
+
+                                <div class="hidden nav__list  bg-gray-200 text-neutral-blue-200 mt-4 py-6 px-6 rounded-md">
+                                    <ul class="flex flex-col items-center gap-2">
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Contact</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">Newsletter</a>
+                                        </li>
+
+                                        <li class="hover:font-semibold hover:cursor-pointer"><a href="">LinkedIn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <ul class="flex flex-col gap-4 items-center font-medium">
+                            <li>
+                                <a class="text-primary-blue" href="">Login</a>
+                            </li>
+
+                            <li>
+                                <a class="bg-gradient-to-r from-gradient-red-100 to-gradient-red-200 py-2 px-6 rounded-full text-white" href="">Sign
+                                        Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex flex-1 justify-between text-white font-ubuntu">
+                    <ul class="flex gap-12">
+                        <li class="relative nav__btn">
+                            <button class="flex gap-4 items-center group">
+                                    <p class="nav__title font-semibold group-hover:underline group-hover:decoration-2">
+                                        Product</p>
+                                    <img class="nav__img rotate-0 transition" src="./images/icon-arrow-light.svg"
+                                        alt="">
+                                </button>
+
+                            <div class="hidden nav__list w-[140px] absolute bg-white text-black mt-4 py-6 px-6 rounded-md -translate-x-1/4">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Overview</a>
+                                    </li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Pricing</a></li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Marketplace</a>
+                                    </li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Integrations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="relative nav__btn">
+                            <button class="flex gap-4 items-center group">
+                                    <p class="nav__title font-semibold group-hover:underline group-hover:decoration-2">
+                                        Company</p>
+                                    <img class="nav__img rotate-0 transition" src="./images/icon-arrow-light.svg"
+                                        alt="">
+                                </button>
+
+                            <div class="hidden nav__list w-[140px] absolute bg-white text-black mt-4 py-6 px-6 rounded-md -translate-x-1/4">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">About</a></li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Team</a></li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Blog</a></li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Careers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="relative nav__btn">
+                            <button class="flex gap-4 items-center group">
+                                    <p class="nav__title font-semibold group-hover:underline group-hover:decoration-2">
+                                        Connect</p>
+                                    <img class="nav__img rotate-0 transition" src="./images/icon-arrow-light.svg"
+                                        alt="">
+                                </button>
+
+                            <div class="hidden nav__list w-[140px] absolute bg-white text-black mt-4 py-6 px-6 rounded-md -translate-x-1/4">
+                                <ul class="flex flex-col gap-2">
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Contact</a></li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">Newsletter</a>
+                                    </li>
+
+                                    <li class="hover:font-semibold hover:cursor-pointer"><a href="">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="flex gap-8 font-bold">
+                        <li>
+                            <a href="">Login</a>
+                        </li>
+
+                        <li>
+                            <a class="border border-white pt-4 pb-3 px-8 rounded-full bg-white text-primary-red-200 hover:border-primary-red-100 hover:bg-primary-red-100 hover:text-white" href="">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container mx-auto px-2 flex-grow flex flex-col justify-center items-center text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-semibold">A modern publishing platform</h1>
+
+                <p class="text-lg md:text-2xl mt-6">Grow your audience and build your online brand</p>
+
+                <div class="mt-6 flex gap-8 justify-center items-center font-semibold text-lg">
+                    <a class="border border-white pt-2 pb-1 px-4 rounded-full bg-white text-primary-red-200 hover:border-primary-red-100 hover:bg-primary-red-100 hover:text-white" href="">Start for Free</a>
+                    <a class="border border-white pt-2 pb-1 px-4 rounded-full hover:bg-white hover:text-primary-red-100" href="">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Designed for the future -->
+        <section class="py-12 text-center md:w-full md:py-36 md:overflow-hidden">
+            <h2 class="container mx-auto heading text-primary-blue">Designed for the future</h2>
+
+            <!-- Wrapper -->
+            <div class="md:flex md:flex-row-reverse md:gap-8 ">
+                <!-- Image -->
+                <div class="md:flex-1 md:flex md:items-center">
+                    <picture class="md:scale-150 md:relative md:translate-x-24">
+                        <source media=" (min-width:768px) " srcset="./images/illustration-editor-desktop.svg ">
+                        <img class="mx-auto" src="./images/illustration-editor-mobile.svg " alt=" ">
+                    </picture>
+                </div>
+
+                <!-- Content -->
+                <div class="container mx-auto px-4 md:px-16 md:flex-1 md:text-left">
+                    <article class="py-7">
+                        <h3 class="sub-heading  text-primary-blue">Introducing an extensible editor</h3>
+
+                        <p class="sub-paragraph text-neutral-blue-200 mt-4">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown.
+                            Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                    </article>
+
+                    <article class="py-7">
+                        <h3 class="sub-heading  text-primary-blue">Robust content management</h3>
+
+                        <p class="sub-paragraph text-neutral-blue-200 mt-4">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- State of the Art Infrastructure -->
+        <section class="section-infra relative text-white text-center flex flex-col bg-patternInfra bg-no-repeat bg-contain mt-32 rounded-bl-[7rem] md:rounded-tr-[7rem] md:bg-auto ">
+            <div class="container mx-auto pt-12 relative -translate-y-52 md:-translate-y-0 md:flex md:justify-center md:items-center md:text-left md:gap-8 md:py-12">
+                <div class="md:flex-1">
+                    <picture>
+                        <img class="mx-auto md:w-[30%] md:scale-[2]" src="./images/illustration-phones.svg " alt=" ">
+                    </picture>
+                </div>
+
+                <div class="md:flex-1">
+                    <h3 class="heading">State of the Art Infrastructure</h3>
+                    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="py-12 text-center md:w-full md:py-[12rem] md:overflow-hidden">
+            <!-- Wrapper -->
+            <div class="md:flex md:flex-row md:gap-8 ">
+                <!-- Image -->
+                <div class="md:flex-1 md:flex md:items-center">
+                    <picture class="md:scale-150 md:relative md:-translate-x-28">
+                        <source media="(min-width:768px) " srcset="./images/illustration-laptop-desktop.svg ">
+                        <img class="mx-auto" src="./images/illustration-laptop-mobile.svg " alt=" ">
+                    </picture>
+                </div>
+
+                <!-- Content -->
+                <div class="container mx-auto px-4 md:px-16 md:flex-1 md:text-left">
+                    <article class="py-7">
+                        <h3 class="sub-heading  text-primary-blue">Free, open, simple</h3>
+
+                        <p class="sub-paragraph text-neutral-blue-200 mt-4">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works
+                            seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                        </p>
+                    </article>
+
+                    <article class="py-7">
+                        <h3 class="sub-heading  text-primary-blue">Powerful tooling</h3>
+
+                        <p class="sub-paragraph text-neutral-blue-200 mt-4">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-neutral-blue-300 text-neutral-blue-100 font-ubuntu py-12 rounded-tr-[7rem] md:py-16">
+            <div class="container mx-auto text-center flex flex-col gap-16 md:flex-row md:justify-between md:px-32">
+                <div>
+                    <img class="mx-auto" src="./images/logo.svg " alt=" ">
+                </div>
+
+                <div class="md:text-left">
+                    <h4 class="text-xl mb-6 text-white">Product</h4>
+
+                    <ul class="flex flex-col gap-1 text-lg font-normal">
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Overview</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Marketplace</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Features</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Integrations</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:text-left">
+                    <h4 class="text-xl mb-6 text-white">Company</h4>
+
+                    <ul class="flex flex-col gap-1 text-lg font-normal">
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">About</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Team</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Blog</a>
+                        </li>
+
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="md:text-left">
+                    <h4 class="text-xl mb-6 text-white">Connect</h4>
+
+                    <ul class="flex flex-col gap-1 text-lg font-normal">
+                        <li>
+                            <a class="hover:underline hover:decoration-2" class="hover:underline hover:decoration-2" href=" ">Contact</a>
+                        </li>
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">Newsletter</a>
+                        </li>
+                        <li>
+                            <a class="hover:underline hover:decoration-2" href=" ">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 text-xs text-center ">
+                Challenge by <a class="text-white" href="https://www.frontendmentor.io?ref=challenge " target="_blank ">Frontend Mentor</a>. Coded by
+                <a class="text-white" href="https://github.com/MuhammadM1998 " target="_blank ">Muhammad
+                        Mahmoud</a>.
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
